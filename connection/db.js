@@ -5,7 +5,7 @@ const { GridFsStorage } = require("multer-gridfs-storage");
 const Grid = require("gridfs-stream");
 const multer = require("multer");
 
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect(process.env.MONGO_PROD_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
